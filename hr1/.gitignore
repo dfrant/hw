@@ -1,0 +1,24 @@
+# Idea project file
+*.iml
+
+# Idea folder
+.idea
+
+# VSCode workspace settings
+.vscode
+
+# Gradle folder
+.gradle
+
+# Build folder
+build
+
+# Idea build output folder
+out
+/ui/src/main/resources/static/
+**/*.log
+
+/ui/.npmrc
+*.test.jsx.snap
+*.*.snap
+**.*.snap
