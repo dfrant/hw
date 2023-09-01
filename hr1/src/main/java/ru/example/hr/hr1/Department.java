@@ -13,9 +13,10 @@ import java.util.UUID;
 @Table(name = "departments")
 public class Department {
   @Id
+  @Column(columnDefinition = "uuid")
+  @GeneratedValue
   private UUID id;
 
-  @Transient
   private String name;
 
   @OneToMany(mappedBy = "department", fetch = FetchType.EAGER)
