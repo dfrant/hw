@@ -46,7 +46,6 @@ public class DepartmentController {
 
   @PutMapping("/departments/{id}")
   public ResponseEntity<Department> replace(@PathVariable("id") UUID id, @RequestBody Department newDepartment) {
-    /* in progress */
     Department department = service.getDepartmentById(id);
     department.setName(newDepartment.getName());
     department.setPeople(newDepartment.getPeople());
